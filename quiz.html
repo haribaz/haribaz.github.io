@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <script defer src="./quiz.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id='sidebar' class='hide'>
+        <div class='access-btn' onclick="openSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><btn class="li-btn">1</btn></li>
+            <li><btn class="li-btn">2</btn></li>
+            <li><btn class="li-btn">3</btn></li>
+            <li><btn class="li-btn">4</btn></li>
+            <li><btn class="li-btn">5</btn></li>
+            <li><btn class="li-btn">6</btn></li>
+            <li><btn class="li-btn">7</btn></li>
+            <li><btn class="li-btn">8</btn></li>
+            <li><btn class="li-btn">9</btn></li>
+            <li><btn class="li-btn">10</btn></li>
+        </ul>
+
+    </div>
+    <div id="quiz-box">
+        <div id="question-box" class="hide">
+            <div id="status-bar">
+                <div id="status-question-box">
+                   <span>Question: </span>
+                   <span id="question-number">2</span>
+                </div>
+                <p id="timer"></p>
+                <div id="status-points-box">
+                    <span>Points: </span>
+                    <span id="pts">0</span>
+                </div>  
+            </div>
+         
+            <div id="question">Question</div>
+            <div id="options" class="options-layout">
+                <button class="btn">Option-1</button>
+                <button class="btn">Option-2</button>
+                <button class="btn">Option-3</button>
+                <button class="btn">Option-4</button>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <input type="text" id="user"  placeholder="Username">
+            <button id="start" class="start btn">Start</button>
+            <button id="previous" class="previous btn hide">Previous</button>
+            <span id="status" class=" status btn hide">Status</span>
+            <button id="next" class="next btn hide">Next</button>
+            <button id="submit" class="submit btn hide">Submit</button>
+            
+        </div>
+    </div>
+
+    <div id="result-table" class="hide">
+        <table>
+           <tr>
+               <td  id="heading" colspan="2">Quiz Results</td>
+           </tr>
+           <tr>
+               <td>Name</td>
+               <td><span id="name-item">Name</span></td>
+           </tr>
+           <tr>
+               <td>Total Questions</td>
+               <td><span id="total-questions">10</span></td>
+           </tr>
+          <tr>
+              <td>Percentage</td>
+              <td><span id="percentage">40%</span></td>
+          </tr>
+          <tr>
+              <td>Your Score</td>
+              <td><span id="score">40</span></td>
+          </tr>
+          <tr>
+            <td>Leader's Name</td>
+            <td><span id="high-name">40</span></td>
+        </tr>
+        <tr>
+            <td>Leader's Score</td>
+            <td><span id="high-score">4</span></td>
+        </tr>
+        <tr>
+            <td>Leader's Submission Time</td>
+            <td><span id="high-time">6</span></td>
+       </tr>
+        </table>
+        <div class="reverse-nav">
+        <button id="try-again" class="btn">Try Again</button>
+        <button id="home" class="btn">Save</button>
+        </div>
+    
+</div>
+           
+        
+
+        
+    
+</body>
+</html>
