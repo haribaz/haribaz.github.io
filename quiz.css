@@ -187,9 +187,9 @@
   #sidebar {
     position: fixed;
     top: 0px;
-    left: -250px;
+    left: -180px;
     background-color: white;
-    width: 250px;
+    width: 180px;
     height: 100%;
     box-shadow: 0 0 20px;
     transition: all 500ms ease-out;
@@ -209,7 +209,7 @@
 
   .li-btn {
     background-color: teal;
-    padding: 20px 50px;
+    padding: 10px 30px;
     text-align: center;
     color: white;
     border-radius: 10px;
@@ -221,7 +221,7 @@
 
   #sidebar .access-btn {
     position: absolute;
-    left: 280px;
+    left: 210px;
     top: 20px;
   }
 
