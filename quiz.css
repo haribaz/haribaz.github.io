@@ -94,8 +94,11 @@
   }
 
   #result-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 150px;
-    padding-top: 100px;;
     background-color: white;
     width: 800px;
     border-radius: 10px;
@@ -104,7 +107,6 @@
   }
 
   table {
-    margin-top: -40px;
     border: 2px solid teal;
     margin-bottom: 25px;
   }
@@ -194,9 +196,12 @@
     left: 0px;
   }
 
-  #sidebar ul li {
-    list-style: none;
-    padding: 30px 30px;
+  .flex-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
   }
 
   .li-btn {
