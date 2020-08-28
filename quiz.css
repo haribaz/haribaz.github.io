@@ -93,12 +93,15 @@
     display: none;
   }
 
+  #result-container {
+     width: 800px;  }
+
   #result-table {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px;
+    padding: 50px 50px;
     background-color: white;
     width: 800px;
     border-radius: 10px;
