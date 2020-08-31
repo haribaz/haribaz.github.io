@@ -206,6 +206,7 @@ saveElement.addEventListener('click', () => {
 
 function openSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('quiz-box').classList.toggle('active');
 }
 
 //TIMER FUNCTION
@@ -370,7 +371,9 @@ function displayQuestion(question) {
      highName.innerHTML = `${highScores[0].name}`;
      highScore.innerHTML = `${highScores[0].score}`;
      let d2 = new Date(highScores[0].d1);
-     highTime.innerHTML = d2;
+     let time = d2.getHours() + ":" + d2.getMinutes() + ":" + d2.getSeconds();
+     highTime.innerHTML = d2.toDateString() + '   ' + times;
+
      quizBox.classList.add('hide');
      resultTable.classList.remove('hide');
      sidebar.classList.add('hide');
