@@ -206,7 +206,6 @@ saveElement.addEventListener('click', () => {
 
 function openSidebar() {
   document.getElementById('sidebar').classList.toggle('open');
-  document.getElementById('quiz-box').classList.toggle('active');
 }
 
 //TIMER FUNCTION
